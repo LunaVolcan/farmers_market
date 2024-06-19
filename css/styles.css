@@ -62,9 +62,7 @@ header {
   border-radius: 10px;
 }
 
-
 button {
-  border: 1px var(--secondary-color) solid;
   font-family: var(--font-family);
   background-color: var(--secondary-color);
   color: var(--color-white);
@@ -72,6 +70,10 @@ button {
   border-radius: 10px;
  }
 
+button:hover {
+ background-color: var(--color-carrot);
+ color: var(--color-black);
+}
 
 footer {
   background-color: var(--secondary-color);
