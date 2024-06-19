@@ -19,9 +19,6 @@ body {
   font-size: 1.1rem;
 }
 
-img {
-  max-width: 100%;
-}
 
 header {
   background: var(--main-color);
@@ -30,7 +27,6 @@ header {
 }
 
 .banner {
-  /*   border-top: .25rem solid #b55232; */
   background-image: url("https://assets.codepen.io/t-15440/fm-corn.jpg");
   width: auto;
   height: 250px;
@@ -39,14 +35,12 @@ header {
 }
 
 .banner-title {
-  /*   border: 2px red solid; */
   font-family: var(--font-headline);
   font-size: 2.5rem;
   margin-top: 6rem;
   color: var(--color-rust);
   font-size: 4rem;
 }
-
 
 .main-content-title {
   font-family: var(--font-headline);
@@ -60,19 +54,23 @@ header {
 
 .main-content img {
   border-radius: 10px;
+  max-width: 100%
 }
 
-button {
+.main-btn {
   font-family: var(--font-family);
   background-color: var(--secondary-color);
   color: var(--color-white);
   padding: 0.5rem;
   border-radius: 10px;
+  border: 2px var(--secondary-color) solid;
+  transition: .5s;
  }
 
-button:hover {
+.main-btn:hover {
  background-color: var(--color-carrot);
  color: var(--color-black);
+ border: 2px var(--color-carrot) solid;
 }
 
 footer {
@@ -94,7 +92,6 @@ h2 {
 
 @media (min-width: 300px) and (max-width: 699px) {
   .header {
-    /*     border: 2px red solid; */
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
@@ -105,7 +102,6 @@ h2 {
   }
 
   .bar-nav {
-    /*     border: 2px blue solid; */
     background: var(--color-ironstone);
     position: absolute;
     right: -100%;
@@ -117,16 +113,14 @@ h2 {
     padding: 0;
     transition: all 400ms;
     text-align: center;
-    margin-top: 25rem;
+    margin-top: 29rem;
   }
 
   .nav-active {
-    /*     border: 2px red solid; */
     right: 0;
   }
 
   nav a {
-    /*     border: 2px red solid; */
     text-decoration: none;
     display: flex;
     justify-content: space-around;
@@ -135,15 +129,13 @@ h2 {
   }
 
   ul {
-    /*     border: 2px black solid; */
     list-style-type: none;
-    margin-bottom: 25rem;
+    margin-bottom: 20rem;
     font-family: var(--font-family);
     font-size: 1.5rem;
   }
 
   .header-btn {
-    /*     margin-top: 7rem; */
     margin-bottom: 0.5rem;
     margin-left: 0.5rem;
   }
@@ -195,7 +187,6 @@ h2 {
   }
 
   ul {
-    /*     border: solid 1px red; */
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -222,18 +213,16 @@ h2 {
   
   .logo {
     margin-bottom: 2rem;
-    max-width: 100%;
   }
   
   .header {
     display: flex; 
-    align-item: baseline;
   } 
   
    ul {
     display: flex;
-    margin-top: 4rem;
-    margin-left: 10rem;
+    margin-top: 5rem;
+    margin-left: 5.5rem;
     gap: 2rem;
     list-style-type: none;
     font-family: var(--font-family);
