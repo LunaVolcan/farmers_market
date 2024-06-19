@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Ovo&display=swap");
+
+:root {
+  --main-color: #fff0cb;
+  --secondary-color: #4c7031;
+  --color-ironstone: #824737;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-rust: #b55232;
+  --color-carrot: #f49619;
+  --font-family: "Nunito Sans", sans-serif;
+  --font-headline: "Ovo", serif;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1.1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background: var(--main-color);
+  border-bottom: 0.75rem solid var(--color-rust);
+  border-bottom-style: double;
+}
+
+.banner {
+  /*   border-top: .25rem solid #b55232; */
+  background-image: url("https://assets.codepen.io/t-15440/fm-corn.jpg");
+  width: auto;
+  height: 250px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.banner-title {
+  /*   border: 2px red solid; */
+  font-family: var(--font-headline);
+  font-size: 2.5rem;
+  margin-top: 6rem;
+  color: var(--color-rust);
+  font-size: 4rem;
+}
+
+
+.main-content-title {
+  font-family: var(--font-headline);
+  font-size: 2.5rem;
+}
+
+.main-item-title {
+  font-family: var(--font-headline);
+  font-size: 2rem;
+}
+
+.main-content img {
+  border-radius: 10px;
+}
+
+
+button {
+  border: 1px var(--secondary-color) solid;
+  font-family: var(--font-family);
+  background-color: var(--secondary-color);
+  color: var(--color-white);
+  padding: 0.5rem;
+  border-radius: 10px;
+ }
+
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 4rem;
+  margin-top: 3rem;
+  color: var(--color-white);
+  border-top: 0.75rem solid var(--color-carrot);
+  border-top-style: double;
+}
+
+p {
+  font-family: var(--font-family);
+}
+
+h2 {
+  margin-left: 2rem;
+}
+
+@media (min-width: 300px) and (max-width: 699px) {
+  .header {
+    /*     border: 2px red solid; */
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .logo {
+    margin: auto;
+  }
+
+  .bar-nav {
+    /*     border: 2px blue solid; */
+    background: var(--color-ironstone);
+    position: absolute;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+    transition: all 400ms;
+    text-align: center;
+    margin-top: 25rem;
+  }
+
+  .nav-active {
+    /*     border: 2px red solid; */
+    right: 0;
+  }
+
+  nav a {
+    /*     border: 2px red solid; */
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+    color: var(--main-color);
+  }
+
+  ul {
+    /*     border: 2px black solid; */
+    list-style-type: none;
+    margin-bottom: 25rem;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+  }
+
+  .header-btn {
+    /*     margin-top: 7rem; */
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .header-burger {
+    border: 2.5px var(--color-rust) solid;
+    border-radius: 2px;
+    padding: 0.5rem;
+    background-color: var(--main-color);
+    color: var(--color-rust);
+    transition: .5s;
+  }
+ 
+  .header-burger:hover {
+    background-color: var(--color-rust);
+    color: var(--main-color);
+  }
+
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-left: 2rem;
+  }
+  
+  footer {
+    text-align:left;
+    font-size: 1rem;
+  }
+  
+}
+
+@media (min-width: 700px) and (max-width: 914px) {
+  .header-btn {
+    display: none;
+  }
+
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 1.5rem;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    /*     border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  footer {
+    text-align: center;
+  }
+}
+
+@media (min-width:915px) and (max-width: 1500px)  {
+  
+  .header-btn {
+    display: none;
+  }
+  
+  .logo {
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+  
+  .header {
+    display: flex; 
+    align-item: baseline;
+  } 
+  
+   ul {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 10rem;
+    gap: 2rem;
+    list-style-type: none;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    
+  } 
+  
+  nav a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+   .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 1.5rem;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+}
