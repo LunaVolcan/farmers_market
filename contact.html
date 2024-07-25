@@ -1,6 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- HTML
+
+- Create a <section class=”contact”>
+- Wrap H2 and H3 in <div>
+- H2 with some type of sentence
+- H3 “fill out form below” etc.
+- Create <div class=”form-wrapper”> for the contact form itself
+- <form id=”form” accept-charset=”UTF-8” action=”#” method=”POST”>
+- Create <div> for *required at the top of the form
+- create <div> class for the form group
+- create label for name
+- create input type <input type=”fname” id=”fname” name=”fname”>
+- repeat for email
+- repeat for phone number
+- Create <div class=”checkbox”>
+- create <div class=”checkbox-align”>
+- create input  <input type="checkbox" id="employment" name="employment" value="employment">
+- create label <label for="employment">Employment</label>
+- repeat for other options you want to add
+- creat <div class=”comment-box”>
+- create label for comment box
+- create comment box
+- <textarea name="comments" id="comments">
+</textarea>
+- create submit button -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,9 +62,113 @@
       <h1 class="banner-title">It's Corn Season!</h1>
     </div>
 
-  
-      
+    <section class=”contact”>
+      <div class="contact-page">
+      <h2>Become A Vendor!</h2>
+      <h3>If you want to become a vendor fill out the contact form below.</h3>
+      </div>
+      <div class="form-wrapper">
+        <form id="form" accept-charset="UTF-8" action="#" method="POST">
+          <div class="required">
+            <p>*required</p>
+          </div>
+          <div class="form-group">
+            <label for="fname">Name*</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="text" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pnumber">Phone*</label>
+            <input type="text" id="phone" name="phone">
+          </div>
+          <div class="checkbox">
+            <label>Buiness Type?</label>
+            <div class="checkbox-group">
+              <div class="checkbox-align">
+                <input type="checkbox" id="produce" name="produce" value="produce">
+                <label for="produce">Farm fresh prodcue</label>
+              </div>
+              <div class="checkbox-align">
+                <input type="checkbox" id="hot-food" name="hot-food" value="hot-food">
+                <label for="hot-food">Hot food vendor</label>
+              </div>
+              <div class="checkbox-align">
+                <input type="checkbox" id="art" name="art" value="art">
+                <label for="art">Art</label>
+              </div>
+              <div class="checkbox-align">
+                <input type="checkbox" id="miscellaneous"  name="miscellaneous" value="miscellaneous">
+                <label for="miscellaneous">Miscellaneous</label>
+              </div>
+              <div class="comment-box">
+                <label for="comment">Comment</label><br>
+                <textarea name="comments" id="comments">
+                </textarea>
+                <button class="form-wrapper">Submit</button>
+              </div>
+            </div>
+            </div>
+        </form>
+      </div>
 
+
+
+
+
+
+    </section>
+      
+    <!-- <section class="contact">
+      <div class="contact-page">
+        <h2>We would love to hear from you!</h2>
+        <h3>Please fill out the form below and we will get back to you within 72 hours</h3>
+      </div>
+      <div class="form-wrapper">
+        <form id="form" accept-charset="UTF-8" action="#" method="POST">
+          <div class="required">
+            <p>*required</p>
+          </div>
+          <div class="form-group">
+            <label for="fname">Name*</label>
+            <input type="text" id="fname" name="fname">
+          </div>
+          <div class="form-group">
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="checkbox">
+            <label>How can we help?</label>
+            <div class="checkbox-group">
+              <div class="checkbox-align">
+                <input type="checkbox" id="employment" name="employment" value="employment">
+                <label for="employment">Employment</label>
+              </div>
+              <div class="checkbox-align">
+                <input type="checkbox" id="coffee" name="coffee" value="coffee">
+                <label for="coffee">Wholesale Coffee</label>
+              </div>
+              <div class="checkbox-align">
+                <input type="checkbox" id="art" name="art" value="art">
+                <label for="art">Art Shows</label>
+              </div>
+            </div>
+          </div>
+          <div class="comment-box">
+            <label for="comment">Comment</label><br>
+            <textarea name="comments" id="comments">
+        </textarea>
+          </div>
+          <button type="submit">Sumbit</button>
+        </form>
+
+      </div> -->
+
+    </section>
+
+    
     <footer class="footer">
       <p>&copy; 2024 Springdale Farmer's Market Association. All Rights Reserved.</p>
     </footer>
